@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+  padding : 0;
+  font-family: 'Merriweather', serif;
+}
+
+.top-container{
+  background-color: #EAF6F6;
+}
+
+.cloud-1{
+  position: relative!important;
+  top: 60px!important;
+  left: 1200px!important;
+}
+
+
+.h1{
+  color: #66BFBF;
+  text-align: center;
+  font-size: 6.25rem !important;
+  font-family: 'Sacramento', cursive!important;
+}
+
+h2{
+  color: #66BFBF;
+  text-align: center!important;
+  font-size: 2.5rem !important;
+  font-family: 'Bebas Neue', cursive!important;
+}
+
+.cloud-2{
+  position: relative;
+  bottom: 300px;
+  left: 150px;
+
+}
+
+.mountain{
+  position: relative;
+  left: 300px;
+  /* text-align: center; */
+}
+
+.mid-container{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  height: 200px;
+
+}
+
+h3{
+  color: #11999E;
+}
+
+.computer{
+  position: relative;
+  width: 200px;
+  left: 50px;
+  float:left;
+  bottom: 90px;
+
+}
+.short-con1{
+  margin-left: 220px;
+}
+
+.chillies{
+  float: right;
+  width: 200px;
+  position: relative;
+  right: 300px;
+  bottom: 160px;
+}
+
+.short-2{
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+h4{
+  position: relative;
+  right: 200px;
+}
+
+.short-3{
+  text-align: center;
+}
+
+/* Button hover animation  */
+
+.cta{
+  display: flex;
+  align-items: center;
+  color: black;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+  font-family: 'Merriweather', serif;
+
+
+}
+
+.cta:before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background: #dc143c;
+  border-radius: 50px;
+  transition: transform .25s .25s
+  cubic-bezier(0 , 0, ,5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+  z-index: -1;
+}
+
+.cta:hover::before{
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s
+  cubic-bezier(0, 0, .5, 2),width .25s .25s cubic-bezier(0, 0, .5, 2) ;
+
+}
+
+.cta i{
+  margin-left: 5px;
+  transition: transform .25s .4s
+  cubic-bezier(0, 0, .5, 2);
+}
+
+.cta:hover i {
+  transform: translateX(3px);
+}
+
+p{
+  text-align: center;
+  background-color: black;
+  padding: 35px;
+  color: white;
+}
